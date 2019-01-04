@@ -1,5 +1,6 @@
 backend:
-  name: test-cms
+  name: schalkventer
+  repo: netlify-cms-test
 
 media_folder: static/assets
 public_folder: assets
