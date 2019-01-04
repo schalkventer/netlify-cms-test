@@ -8,14 +8,58 @@ publish_mode: editorial_workflow
 
 media_folder: static/assets
 public_folder: assets
+display_url: https://schalk-test.netlify.com
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: Story Template
+    label: story_template
+    folder: src/content/story_templates
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - 
+        name: title
+        label: Title
+        widget: string
+      - 
+        name: questions
+        label: Questions
+        widget: list
+        fields:
+          -
+            name: question
+            label: Question
+            widget: string
+          -
+            name: description
+            label: Description
+            widget: markdown
+          -
+            name: translations
+            label: Translations
+            widget: list
+            fields:
+              -
+                name: language
+                label: Language
+                widget: select
+                options:
+                  - Afrikaans
+                  - Xhosa
+                  - Zulu
+              - 
+                name: translatedQuestions
+                label: Questions
+                widget: list
+                fields:
+                  -
+                    name: question
+                    label: Question
+                    widget: string
+                  -
+                    name: description
+                    label: Description
+                    widget: markdown
+
+            
+
+      
