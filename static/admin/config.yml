@@ -5,7 +5,7 @@ backend:
 media_folder: static/assets
 public_folder: assets
 
-collections:npm
+collections:
   - name: blog
     label: Blog
     folder: blog
